@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Button from './components/Button';
+import ParentComponent from './components/useCallback-hook';
 
 function App() {
   return (
     <div className="App">
-      <Button onClickHandler= {() => alert('Hello')}> Click Me </Button>
+      <ParentComponent />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Button({onClickHandler, children}) {
+  console.log('button: ', children);
   return (
     <button onClick={ onClickHandler }>
       { children }
@@ -8,4 +9,4 @@ function Button({onClickHandler, children}) {
   );
 }
 
-export default Button;
+export default React.memo(Button);
